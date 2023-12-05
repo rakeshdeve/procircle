@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+cv+XzrsODM5yn5WPOUf/9l9kNCy1Nz5uLuxvv5OLmYtR4H1pZFIZouYOo1lxEUWvxcDnQtDWHZtsSzPluX0IA==",
+  "dgSpecHash": "JQThVPOjuL6wiqAW0IWLGugrZd53ZocU2uJu2CqwTrPbCrYV0VPneTUCzBXtxauilRUSNfrDNKEH3LeCR9LFCw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Procircle\\WebApplication1\\Procircle.csproj",
+  "projectFilePath": "D:\\Projects\\git\\procircle\\WebApplication1\\Procircle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nivet\\.nuget\\packages\\jquery\\1.7.0\\jquery.1.7.0.nupkg.sha512",
     "C:\\Users\\nivet\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",

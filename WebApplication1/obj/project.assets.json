@@ -979,11 +979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Procircle\\WebApplication1\\Procircle.csproj",
+      "projectUniqueName": "D:\\Projects\\git\\procircle\\WebApplication1\\Procircle.csproj",
       "projectName": "Procircle",
-      "projectPath": "D:\\Projects\\Procircle\\WebApplication1\\Procircle.csproj",
+      "projectPath": "D:\\Projects\\git\\procircle\\WebApplication1\\Procircle.csproj",
       "packagesPath": "C:\\Users\\nivet\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Procircle\\WebApplication1\\obj\\",
+      "outputPath": "D:\\Projects\\git\\procircle\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
