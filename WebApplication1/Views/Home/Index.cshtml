@@ -1,0 +1,258 @@
+﻿@using Microsoft.AspNetCore.Hosting
+@inject IHostingEnvironment HostingEnvironment
+
+
+@{
+    ViewData["Title"] = "Procircle";
+}
+
+
+<div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/slider2.jpg);" data-aos="fade">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h1>Your Premier GSE Parts Source</h1>
+                            <p class="mb-5">Delivering Excellence in Ground Support Equipment Solutions – Contact us for top-notch parts and unparalleled expertise in filters, adhesives, lubricants, oils, and more.</p>
+                            <div>
+                                <a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="site-section" id="about-section">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-md-6 mb-5 mb-lg-0 position-relative">
+                    <img src="images/about.jpg" class="img-fluid" alt="Image">
+                    <div class="experience">
+                        <span class="year">Setting Sail</span>
+                        <span class="caption">on a Path of Excellence</span>
+                    </div>
+                </div>
+                <div class="col-md-5 ml-auto">
+                    <h3 class="section-sub-title">About Us</h3>
+                    <h2 class="section-title mb-3">Welcome to Procircle</h2>
+                    <p class="mb-4">Our company specializes in ground support equipment (GSE) replacement parts especially filters , adhesives , lubricants , oils , cleaning cloths , tires , battery , grease , workshop tools, contact us with your requirement, we will be more than happy to help</p>
+                    <!-- <p><a href="#" class="btn btn-primary btn-black--hover">Learn More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="site-section border-bottom bg-light" id="services-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h3 class="section-sub-title">Services</h3>
+                    <h2 class="section-title mb-3">Our Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="p-4 bg-white">
+                        <p>Welcome to Procircle, your go-to destination for aviation ground support equipment solutions. With a primary focus on excellence, we provide a wide range of services to cater to all your aviation needs.</p>
+
+                        <p>Our offerings encompass top-notch replacement parts for ground support equipment, ensuring optimal performance and seamless operation. We aspire to be your strategic partner, offering tailored solutions and expert advice to enhance the efficiency of your aviation operations.</p>
+
+                        <p>As your one-stop solution for ground support equipment needs, we aim to provide comprehensive services that cover every aspect of your requirements. Our vision is set on achieving market leadership in the AGE & Aviation spares market in KSA, achieved through the delivery of unparalleled support and services to our valued customers.</p>
+
+                        <p>Explore our diverse product range, including batteries, tires, engine oil, brake fluid, specialty lubricants, quality bearings, ground support and handling equipment spare parts, personal protective equipment (PPE), workshop tools, engine and fuel filters, as well as cleaning solutions and tapes.</p>
+
+                        <p>At Procircle, we are committed to excellence, striving to exceed your expectations and contribute to the success of your aviation endeavors. Contact us today to discuss your specific requirements and experience the difference of partnering with us for all your ground support equipment needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed-carousel-container">
+                <div class="row">
+                    <!-- Service Item 1 -->
+                    @{
+                        // Replace this with the actual path to your image directory
+                        string imageDirectoryService1 = "/images/service1";
+
+                        // Get a list of image file names in the directory
+                        string[] imageFileNamesService1 = System.IO.Directory.GetFiles($"{HostingEnvironment.WebRootPath}{imageDirectoryService1}")
+                        .Select(System.IO.Path.GetFileName)
+                        .ToArray();
+                    }
+                    <div class="col-md-3 mb-4 mb-md-4" data-aos="fade-up">
+                        <div id="carouselExample1" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @for (int i = 0; i < imageFileNamesService1.Length; i++)
+                                {
+                                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                                        <img src="@($"{imageDirectoryService1}/{imageFileNamesService1[i]}")" class="d-block w-100" alt="Service 4 - Image @(i + 1)">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 2 -->
+                    @{
+                        // Replace this with the actual path to your image directory
+                        string imageDirectoryService2 = "/images/service2";
+
+                        // Get a list of image file names in the directory
+                        string[] imageFileNamesService2 = System.IO.Directory.GetFiles($"{HostingEnvironment.WebRootPath}{imageDirectoryService2}")
+                        .Select(System.IO.Path.GetFileName)
+                        .ToArray();
+                    }
+                    <div class="col-md-3 mb-4 mb-md-4" data-aos="fade-up">
+                        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @for (int i = 0; i < imageFileNamesService2.Length; i++)
+                                {
+                                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                                        <img src="@($"{imageDirectoryService2}/{imageFileNamesService2[i]}")" class="d-block w-100" alt="Service 4 - Image @(i + 1)">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 3 -->
+                    @{
+                        // Replace this with the actual path to your image directory
+                        string imageDirectoryService3 = "/images/service3";
+
+                        // Get a list of image file names in the directory
+                        string[] imageFileNamesService3 = System.IO.Directory.GetFiles($"{HostingEnvironment.WebRootPath}{imageDirectoryService3}")
+                        .Select(System.IO.Path.GetFileName)
+                        .ToArray();
+                    }
+                    <div class="col-md-3 mb-4 mb-md-4" data-aos="fade-up">
+                        <div id="carouselExample3" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @for (int i = 0; i < imageFileNamesService3.Length; i++)
+                                {
+                                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                                        <img src="@($"{imageDirectoryService3}/{imageFileNamesService3[i]}")" class="d-block w-100" alt="Service 4 - Image @(i + 1)">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 4 -->
+                    @{
+                        // Replace this with the actual path to your image directory
+                        string imageDirectoryService4 = "/images/service4";
+
+                        // Get a list of image file names in the directory
+                        string[] imageFileNamesService4 = System.IO.Directory.GetFiles($"{HostingEnvironment.WebRootPath}{imageDirectoryService4}")
+                        .Select(System.IO.Path.GetFileName)
+                        .ToArray();
+                    }
+                    <div class="col-md-3 mb-4 mb-md-4" data-aos="fade-up">
+                        <div id="carouselExample4" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @for (int i = 0; i < imageFileNamesService4.Length; i++)
+                                {
+                                    <div class="carousel-item @(i == 0 ? "active" : "")">
+                                        <img src="@($"{imageDirectoryService4}/{imageFileNamesService4[i]}")" class="d-block w-100" alt="Service 4 - Image @(i + 1)">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="site-section bg-light" id="contact-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h3 class="section-sub-title">Contact</h3>
+                    <h2 class="section-title mb-3">Contact us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <form action="#" class="p-5 bg-white">
+
+                        <h2 class="h4 text-black mb-5">Contact Form</h2>
+
+                        <div class="row form-group">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label class="text-black" for="fname">First Name</label>
+                                <input type="text" id="fname" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="text-black" for="lname">Last Name</label>
+                                <input type="text" id="lname" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <label class="text-black" for="email">Email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+
+                            <div class="col-md-12">
+                                <label class="text-black" for="subject">Subject</label>
+                                <input type="subject" id="subject" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label class="text-black" for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+             @*   <div class="col-md-5">
+
+                    <div class="p-4 mb-3 bg-white">
+                        <p class="mb-0 font-weight-bold">Address</p>
+                        <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+                        <p class="mb-0 font-weight-bold">Phone</p>
+                        <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+
+                        <p class="mb-0 font-weight-bold">Email Address</p>
+                        <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+
+                    </div>
+
+                </div>*@
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="bg-primary py-5 d-block text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md10"><h2 class="text-white">Let's Get Started</h2></div>
+            </div>
+        </div>
+    </a>
+</div>
